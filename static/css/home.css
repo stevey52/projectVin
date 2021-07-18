@@ -10,9 +10,6 @@
 
 }
 
-
-
-
 .footcontainer{background-color:#ffff; }
 
 .cntr{
@@ -30,4 +27,23 @@ h1{
   text-align: center;
   margin-top: 90px;
 
+}
+
+.glyphicon{
+  opacity: 0.2;
+}
+
+.glyphicon:hover{
+  background: black;
+  opacity: 1;
+}
+
+.container h2{
+  text-align: center;
+}
+
+footer{
+  text-align: right;
+  margin-top: 30px;
+  opacity: 0.2;
 }
