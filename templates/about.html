@@ -1,16 +1,17 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title>About Us</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="{% static "css/about.css"%}"/>
   </head>
   <body>
 
     <div class="container">
       <div class="jumbotron">
-      
+      <h1>ABOUT</h1>
           <p>THERE SO MANY WAYS TO TELL THE WORLD WE LIVE
       VINNEOGRAPHY HAVE ALWAYS DECIDED TO DO IT
       WITH THEIR PHOTOGRAPHY.
@@ -23,10 +24,11 @@
       THE FACES, THE SCIENCE OF LIGHT & THE NUANCES
       WHILE REPLACING WORDS, THEY HAVE THE SAME
       COMMUNICATIVE POWER.
-      PHOTOGRAPHY FOR VINNEOGRAPHY IS NOT JUST
-      A JOB IS MUCH MORE OF A PASSION</p>
+      PHOTOGRAPHY FOR
+      <span id="under" style="color:green;">VINNEOGRAPHY IS NOT JUST A JOB IS MUCH MORE OF A PASSION</span>
+    </p>
         </div>
-
+        <img src="{% static "images/vinyAbout__-.jpg" %}" alt="">
       </div>
 
 
