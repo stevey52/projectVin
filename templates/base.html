@@ -8,17 +8,37 @@
 
   <title>Black & White</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+  <link rel="stylesheet" href="{% static "css/base.css"%}">
   </head>
 
   <body>
+    <header>
+      <legend>
+        <a href="{% url "home" %}">Home</a>
+        <a href="#">BW</a>
+      </legend>
+    </header>
+
     <div class="container">
-      <div id="title-box" class="panel">
-        <h3>Black & white</h3>
+
+      <div id="castPanel" class="panel" style="position:absolute;">
+        <h3>cast</h3>
+
       </div>
-      <div class="" style="content-align:left;">
-        <img src="{% static "images/bwGema-1.jpg"%}" alt="No image">
-        <img src="{% static "images/bwGema-3.jpg" %}" alt="">
-        <img src="{% static "images/bwNelysa__-.jpg" %}" alt="">
+      <div class="pics" >
+
+        <a href="#"><img src="{% static "images/bwkisha_-1.jpg" %}" alt="" style="width:30vw;"></a>
+        <a href="#"><img src="{% static "images/bwKisha__-2.jpg" %}" alt="" style="width:30vw;"></a>
+        <div class="gema">
+          <a  href="#"><img src="{% static "images/bwGema-1.jpg"%}" alt="No image" style="width:30vw"></a>
+          <a href="#"><img src="{% static "images/bwGema-3.jpg" %}" alt="" style="width:30vw;"></a>
+
+
+      </div>
+        </div>
+
+      </div>
+
 
       </div>
 
