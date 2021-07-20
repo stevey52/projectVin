@@ -13,26 +13,37 @@
 
   <body>
     <header>
-      <legend>
-        <a href="{% url "home" %}">Home</a>
-        <a href="#">BW</a>
+      <legend style="background:#747574;">
+        <a style="font-size:25px; color:#d4af37;" href="{% url "home" %}">VINNEOGRAPHY:</a>
+
       </legend>
     </header>
 
     <div class="container">
 
-      <div id="castPanel" class="panel" style="position:absolute;">
-        <h3>cast</h3>
+      <div  class="panel" style="position:absolute;">
+        <ul style="text-align:justify;">
+          <li><a style="color:#D4AF37;" href="#">Vincent</a> -Photographer</li>
+          <li><a style="color:#D4AF37;" href="#">Andrew m</a> -Model</li>
+        </ul>
 
       </div>
       <div class="pics" >
 
         <a href="#"><img src="{% static "images/bwkisha_-1.jpg" %}" alt="" style="width:30vw;"></a>
         <a href="#"><img src="{% static "images/bwKisha__-2.jpg" %}" alt="" style="width:30vw;"></a>
-        <div class="gema">
-          <a  href="#"><img src="{% static "images/bwGema-1.jpg"%}" alt="No image" style="width:30vw"></a>
-          <a href="#"><img src="{% static "images/bwGema-3.jpg" %}" alt="" style="width:30vw;"></a>
 
+
+        <div class="panel1" style="position:absolute;">
+          <ul style="text-align:justify;">
+            <li><a style="color:#D4AF37;" href="#">Vincent</a> -Photographer</li>
+            <li><a style="color:#D4AF37;" href="#">Andrew m</a> -Model</li>
+            <p style="font-size:80px;">art of Black and white</p>
+          </ul>
+
+        </div>
+        <div class="gema">
+          <a  href="#"><img src="{% static "images/bwStevie___-.jpg"%}" alt="No image" style="width:60vw"></a>
 
       </div>
         </div>
