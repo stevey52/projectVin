@@ -10,7 +10,7 @@ body{
   padding-right: 20px;
 }
 
-.gema{
+.potraits{
   margin-top: 40px;
   padding-top: 50px;
 }
@@ -41,4 +41,8 @@ p{
   color: red;
   text-align: right;
   margin-right: 50px;
+}
+
+#putcenter{
+  text-align: center;
 }
