@@ -9,4 +9,7 @@ class AboutPageView(TemplateView):
     template_name = "about.html"
 
 class BaseViewPage(TemplateView):
-    template_name = "base.html"
+    template_name = "bw.html"
+
+class OutdoorPageView(TemplateView):
+    template_name = "outdoor.html"

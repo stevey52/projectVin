@@ -70,13 +70,13 @@
           <li role="separator" class="divider"></li>
           <li><a href="#">Nature</a></li>
           <li role="separator" class="divider"></li>
-          <li><a href="#">Modeling</a></li>
+          <li><a href="#">In-door</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="{% url "outdoor"%}">Out-door</a></li>
           <li role="separator" class="divider"></li>
           <li><a href="#">Life Style</a></li>
           <li role="separator" class="divider"></li>
-          <li><a href="#">Friendship</a></li>
-          <li role="separator" class="divider"></li>
-          <li><a href="{% url "base" %}">Black & White</a></li>
+          <li><a href="{% url "bw" %}">Black & White</a></li>
         </ul>
     </li>
   </ul>
@@ -131,7 +131,7 @@
         </div>
 
         <div class="item">
-          <a href="#"><img src="{% static "images/paps2.jpeg"%}" alt="mary"></a>
+          <a href="#"><img src="{% static "images/triceslide.jpg"%}" alt="mary"></a>
           <div class="carousel-caption">
 
 
@@ -164,7 +164,7 @@
 
   <div class="row">
   <div class="col-lg-3 col-xs-4">
-    <a href="#"><img src="{% static "images/trice_Frozen_-.jpg"%}" alt="" style="width:20vw;"></a>
+    <a href="{% url "outdoor"%}"><img src="{% static "images/trice_Frozen_-.jpg"%}" alt="" style="width:20vw;"></a>
   </div>
   <div class="col-lg-3 col-xs-4">
     <a href="#"><img src="{% static "images/kisha_pizeria__-1.jpg"%}" alt="" style="width:20vw;"></a>
@@ -174,7 +174,7 @@
   </div>
 
   <div class="col-lg-3 col-xs-4">
-    <a href="{% url 'base' %}"><img src="{% static "images/bwGema-1.jpg"%}" alt="" style="width:20vw;"></a>
+    <a href="{% url 'bw' %}"><img src="{% static "images/bwGema-1.jpg"%}" alt="" style="width:20vw;"></a>
   </div>
 </div>
 </div>
