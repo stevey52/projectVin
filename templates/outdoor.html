@@ -4,39 +4,79 @@
   <head>
     <meta charset="utf-8">
     <title>Out_Door</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="{% static "css/outdoor.css"%}">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <script src= "{% static "java/outdoor.js"%}" type="text/javascript"></script>
+
   </head>
+
   <body>
     <header>
       <legend style="background:#1d1d1d;">
         <a style="font-size:25px; color:#ffd700;" href="{% url "home" %}">VINNEOGRAPHY:</a>
-
       </legend>
 
 
 
+      <!--start the sliders-->
+      <!-- <div style="padding:120px 0;"> -->
+          <div id="thumbnail-slider">
+              <div class="inner">
+                  <ul>
+                      <li>
+                          <a class="thumb"href="{% static "images/kisha_-.jpg"%}"></a>
+                      </li>
+                      <li>
+                          <a class="thumb" href="{% static "images/marian__-.jpg"%}"></a>
+                      </li>
+                      <li>
+                          <a class="thumb" href="{% static "images/NelysaFlower__-.jpg"%}"></a>
+                      </li>
+                      <li>
+                          <a class="thumb" href="{% static "images/trice2__-.jpg"%}"></a>
+                      </li>
+                      <li>
+                          <a class="thumb" href="{% static "images/mvumiBall___-1.jpg"%}"></a>
+                      </li>
+                      <li>
+                          <a class="thumb" href="{% static "images/kisha_pizeria__-3.jpg"%}"></a>
+                      </li>
+                      <li>
+                          <a class="thumb" href="{% static "images/Nelysa__-2.jpg"%}"></a>
+                      </li>
+                      <li>
+                          <a class="thumb" href="{% static "images/trice_-.jpg"%}"></a>
+                      </li>
+                      <li>
+                          <a class="thumb" href="{% static "images/Boteng__-.jpg"%}"></a>
+                      </li>
+                      <li>
+                          <a class="thumb" href="{% static "images/model_sunset2__-.jpg"%}"></a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      <!--end of the sliders-->
 
 
-  <div class="container">
-
-    <div class="outdoor">
-        <h3 style="text-align:center;">Science of Light</h3>
-
-    <img src="{% static "images/marian__-.jpg"%}" alt="" style="width:30vw;">
-
-    <img src="{% static "images/NelysaFlower__-.jpg"%}" alt=""  style="width:53vw;">
-
-    <img id="kisha" src="{% static "images/kisha_pizeria__-3.jpg"%}" alt="" style="height:30vw">
-
-    <a href="#"> <img src="{% static "images/trice_-.jpg"%}" alt="" style="width:38vw;"></a>
 
 
 
-  </div>
 
-</div>
+<legend>
+  <p>Tanzania</p>
 
+</legend>
 
+          <div align="center">
+            <h4 style="font-size:12px;"> follow us:
+              <a href="https://www.instagram.com/vinneography/">instagram  |  </a>
+              <a href="https://twitter.com/VinnyPallingo">twitter  |  </a>
+              <a href="https://www.facebook.com/Vinneography">facebook</a>
+            </h4>
+
+            </div>
   </body>
 </html>

@@ -14,6 +14,10 @@
     <link rel="stylesheet" href='{% static "css/home.css" %}'/>
     <script src="https://unpkg.com/scrollreveal@4"></script>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap" rel="stylesheet">
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script>
@@ -85,9 +89,9 @@
   <div class="navbar-right">
       <ul class="nav navbar-nav">
         <li><a href="#">contact us:</a></li>
-    <li><a class="navbar-brand" href="https://www.instagram.com"class="img-responsive"> <img src='{% static "images/insta2.png" %}' class="rounded" alt="Cant load image", style="width:1.5vw;"></a></li>
-    <li><a class="navbar-brand" href="https://www.facebook.com"class="img-responsive"> <img src='{% static "images/facebook.png" %}' class="rounded" alt="Cant load image", style="width:1.5vw;"></a></li>
-    <li><a class="navbar-brand" href="https://www.twitter.com"class="img-responsive"> <img src='{% static "images/twitter.png" %}' class="rounded" alt="Cant load image", style="width:1.5vw;"></a></li>
+    <li><a class="navbar-brand" href="https://www.instagram.com/vinneography/"class="img-responsive"> <img src='{% static "images/insta2.png" %}' class="rounded" alt="Cant load image", style="width:1.5vw;"></a></li>
+    <li><a class="navbar-brand" href="https://www.facebook.com/Vinneography"class="img-responsive"> <img src='{% static "images/facebook.png" %}' class="rounded" alt="Cant load image", style="width:1.5vw;"></a></li>
+    <li><a class="navbar-brand" href="https://twitter.com/VinnyPallingo"class="img-responsive"> <img src='{% static "images/twitter.png" %}' class="rounded" alt="Cant load image", style="width:1.5vw;"></a></li>
       </ul>
   </div>
 </div>
@@ -107,45 +111,59 @@
         <li data-target="#myCarousel" data-slide-to="2"></li>
         <li data-target="#myCarousel" data-slide-to="3"></li>
         <li data-target="#myCarousel" data-slide-to="4"></li>
+        <li data-target="#mmyCarousel" data-slide-to="5"></li>
       </ol>
 
       <!-- Wrapper for slides -->
       <div class="carousel-inner">
         <div class="item active">
-        <a href="{% url "outdoor" %}"><img src="{% static "images/marian_SlideShow.jpg"%}" alt="Chania"></a>
+        <a href="{% url "outdoor" %}"><img src="{% static "images/marian_SlideShow.jpg"%}" alt=""></a>
           <div class="carousel-caption">
+            <h4>Marian Mvumi Sunflower mill</h4>
+
+          </div>
+
+        </div>
+
+        <div class="item">
+          <a href="#"><img src="{% static "images/mtawaSLides.jpg"%}" alt=""></a>
+          <div class="carousel-caption">
+            <h4>Udom Hills</h4>
 
           </div>
         </div>
 
         <div class="item">
-          <a href="#"><img src="{% static "images/mtawaSLides.jpg"%}" alt="Chicago"></a>
+          <a href="#"><img src="{% static "images/Garage_SLideshow.jpg" %}" alt=""></a>
           <div class="carousel-caption">
-
+            <h4>Garage</h4>
           </div>
         </div>
 
         <div class="item">
-          <a href="#"><img src="{% static "images/Garage_SLideshow.jpg" %}" alt="New York"></a>
+          <a href="#"><img src="{% static "images/triceslide.jpg"%}" alt=""></a>
           <div class="carousel-caption">
-
-
+            <h4>tRICE INDOOR</h4>
           </div>
         </div>
 
         <div class="item">
-          <a href="#"><img src="{% static "images/triceslide.jpg"%}" alt="mary"></a>
+          <a href="#"><img src="{% static "images/mode(1).jpg"%}" alt=""></a>
           <div class="carousel-caption">
-
-
+            <h4>Dodoma-Sunset</h4>
           </div>
         </div>
+
 
         <div class="item">
-          <a href="#"><img src="{% static "images/model_makeUp__slideshow_-.jpg"%}" alt=""></a>
+          <a href="#"><img src="{% static "images/Nelysa_Slideshow.jpg"%}" alt=""></a>
           <div class="carousel-caption">
+            <h4>Nelysa_Slideshow</h4>
+
           </div>
+
         </div>
+
       </div>
 
       <!-- Left and right controls -->
@@ -160,11 +178,11 @@
     </div>
 
 <!-- photos with grid system to control various screen view -->
-<!-- <div class="container"> -->
+
 
   <div class="container">
-    <h3><strong><em>Gallery Preview</em></strong></h3>
-    <h3><strong><em>From Indoor--outdoor to Bw</em></strong></h3>
+    <h3 id="midtext"><strong><em>Gallery Preview</em></strong></h3>
+    <p id="midtext"><strong><em>From Indoor--outdoor to Bw</em></strong></p>
 
   </div>
 
@@ -175,24 +193,23 @@
   <div class="col-lg-3 col-xs-3">
     <a href="#"><img src="{% static "images/kisha_pizeria__-1.jpg"%}" alt="" style="width:30vw;"></a>
   </div>
+
   <div class="col-lg-3 col-xs-3">
     <a href="#"><img src="{% static "images/trice4___-.jpg"%}" alt="" style="width:30vw;"></a>
+    <div  class="carousel-caption">
+      <h5 class="sec">Nelysa_Slideshow</h5>
+
+    </div>
   </div>
 
   <div class="col-lg-3 col-xs-3">
     <a href="{% url 'bw' %}"><img src="{% static "images/bwGema-1.jpg"%}" alt="" style="width:30vw;"></a>
   </div>
 </div>
-<!-- </div> -->
 
 
 
-
-
-
-
-
-<footer><strong><em>Copyright (c) 2021 Vinneography Holder All Rights Reserved.</em></strong></footer>
+<footer><strong><em>Vinneography (c) 2021 Copyright Holder All Rights Reserved.</em></strong></footer>
 
 <script src="https://code.jquery.com/jquery-3.1.1.js"
   integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="

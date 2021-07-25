@@ -1,7 +1,7 @@
 .carousel {
   width:100vw;
   height:30vw;
-  margin: auto;
+  margin: relative;
 }
 .carousel-inner img {
   margin: auto;
@@ -23,7 +23,7 @@
 .card-deck{margin: 10vw;}
 
 h1{
-  color:#d4af37;
+  color:#ffd700;
   text-align: center;
   margin-top: 90px;
 
@@ -38,14 +38,34 @@ h1{
   opacity: 1;
 }
 
-.container h3{
+#midtext{
   text-align: center;
 }
 
+.carousel ol{
+  opacity: 0.2;
+}
+
+.carousel-caption{
+
+  font-size:0px;
+  top: 50%;
+transform: translateY(-50%);
+transform: translateX(-50%);
+
+}
+
+h4{
+  font-size: 35px;
+  font-family: 'Otomanopee One', sans-serif;
+  font-weight: lighter;
+}
+
 footer{
+  font-size: 12px;
   text-align: right;
   margin-top: 30px;
-  opacity: 0.2;
+
 }
 
 .dropdown:hover .dropdown-menu{
@@ -56,4 +76,18 @@ footer{
 .dropdown-menu:hover{
     margin-top: 0;
     display: block;
+}
+
+.col-lg-3 .carousel-caption{
+  text-decoration: line-through;
+  text-align: right;
+}
+
+.row .sec{
+  border: 1px solid red;
+  opacity:0;
+}
+
+.row .sec:hover{
+  opacity:2;
 }
