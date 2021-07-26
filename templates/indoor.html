@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Indoor Photos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static "css/indoor.css" %}">
+    <script src= "{% static "java/indoor.js" %}" type="text/javascript"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+  <body>
+
+    <legend>
+      <a href="{% url "home"%}">Home</a>
+    </legend>
+
+    <img src="{% static "images/trice3___-.jpg"%}" alt="" style="width:30vw;">
+    <img src="{% static "images/model_MakeUp2___-.jpg"%}" alt="" style="width:30vw;">
+    <img src="{% static "images/IMG_0121.JPG"%}" alt="" style="width:30vw;">
+    <img src="{% static "images/trice___-.jpg"%}" alt="" style="width:50vw;">
+
+  </body>
+</html>

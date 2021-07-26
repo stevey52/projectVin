@@ -83,11 +83,11 @@ footer{
   text-align: right;
 }
 
-.row .sec{
+.row .carousel-caption{
   border: 1px solid red;
   opacity:0;
 }
 
-.row .sec:hover{
+.row .carousel-caption:hover{
   opacity:2;
 }

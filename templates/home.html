@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <title>Vinneography</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
     <script src='{% static "java/home.js" %}'></script>
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
@@ -74,7 +74,7 @@
           <li role="separator" class="divider"></li>
           <li><a href="#">Nature</a></li>
           <li role="separator" class="divider"></li>
-          <li><a href="#">In-door</a></li>
+          <li><a href="{% url "indoor"%}">In-door</a></li>
           <li role="separator" class="divider"></li>
           <li><a href="{% url "outdoor"%}">Out-door</a></li>
           <li role="separator" class="divider"></li>
@@ -186,16 +186,17 @@
 
   </div>
 
+<div class="container">
   <div class="row">
   <div class="col-lg-3 col-xs-3">
-    <a href="{% url "outdoor"%}"><img src="{% static "images/trice_Frozen_-.jpg"%}" alt="" style="width:30vw;"></a>
+    <a href="{% url "outdoor"%}"><img src="{% static "images/trice_Frozen_-.jpg"%}" alt="" style="width:25vw;"></a>
   </div>
   <div class="col-lg-3 col-xs-3">
-    <a href="#"><img src="{% static "images/kisha_pizeria__-1.jpg"%}" alt="" style="width:30vw;"></a>
+    <a href="#"><img src="{% static "images/kisha_pizeria__-1.jpg"%}" alt="" style="width:25vw;"></a>
   </div>
 
   <div class="col-lg-3 col-xs-3">
-    <a href="#"><img src="{% static "images/trice4___-.jpg"%}" alt="" style="width:30vw;"></a>
+    <a href="#"><img src="{% static "images/trice4___-.jpg"%}" alt="" style="width:25vw;"></a>
     <div  class="carousel-caption">
       <h5 class="sec">Nelysa_Slideshow</h5>
 
@@ -203,8 +204,10 @@
   </div>
 
   <div class="col-lg-3 col-xs-3">
-    <a href="{% url 'bw' %}"><img src="{% static "images/bwGema-1.jpg"%}" alt="" style="width:30vw;"></a>
+    <a href="{% url 'bw' %}"><img src="{% static "images/bwGema-1.jpg"%}" alt="" style="width:25vw;"></a>
   </div>
+</div>
+
 </div>
 
 
