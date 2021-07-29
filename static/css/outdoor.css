@@ -75,3 +75,28 @@
     /* -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, transparent), to(rgba(255,255,255,0.4))); */
     transition:all linear 0.4s;
 }
+
+
+
+/*-- Start 3D --*/
+    #thumbnail-slider .thumb {
+        -webkit-transform: perspective(500px) translateX(1px) translateZ(-30px) rotateY(30deg);
+        transform: perspective(500px) translateX(1px) translateZ(-30px) rotateY(30deg);
+    }
+
+    #thumbnail-slider .active .thumb {
+        -webkit-transform: translateX(0px) translateZ(0px) rotateY(0deg);
+        transform: translateX(0px) translateZ(0px) rotateY(0deg);
+    }
+
+    #thumbnail-slider li.active ~ li .thumb {
+        -webkit-transform: perspective(500px) translateX(-1px) translateZ(-30px) rotateY(-30deg);
+        transform: perspective(500px) translateX(-1px) translateZ(-30px) rotateY(-30deg);
+    }
+/*-- End 3D --*/
+
+/* --------- navigation controls ------- */
+/* The nav id should be: slider id + ("-prev", "-next", and "-pause-play") */
+
+#thumbnail-slider-pause-play {display:none;} /*.pause*/
+#thumbnail-slider-prev, #thumbnail-slider-next {display:none;}
