@@ -19,3 +19,6 @@ class OutdoorPageView(TemplateView):
 
 class IndoorPageView(TemplateView):
     template_name = "indoor.html"
+
+class ProductsView(TemplateView):
+    template_name = "products.html"
