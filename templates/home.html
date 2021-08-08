@@ -7,7 +7,7 @@
     <meta charset="utf-8">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
-    <script src='{% static "java/home.js" %}'></script>
+
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
 
@@ -97,7 +97,7 @@
 </div>
 </div>
 </nav>
-<h1><strong><em>Vinneograephy</em></strong></h1>
+<h1 id="vinnyHeader"><strong><em>Vinneograephy</em></strong></h1>
 
 <!-- creating a slide show at home screen with the use of carousel slide-->
 
@@ -119,7 +119,7 @@
         <div class="item active">
         <a href="{% url "outdoor" %}"><img src="{% static "images/marian_SlideShow.jpg"%}" alt=""></a>
           <div class="carousel-caption">
-            <h4>Marian Mvumi Sunflower mill</h4>
+            <h4>Marian-Sunflower</h4>
 
           </div>
 
@@ -183,32 +183,44 @@
   <div class="container">
     <!-- <h3 id="midtext"><strong><em>Gallery Preview</em></strong></h3> -->
     <h3 id="midtext"><strong><em>From Indoor--outdoor to Bw</em></strong></h3>
+      </div>
 
-  </div>
 
-<div class="container">
-  <div class="row">
-  <div class="col-lg-3 col-xs-3">
-    <a href="{% url "outdoor"%}"><img src="{% static "images/trice_Frozen_-.jpg"%}" alt="" style="width:25vw;"></a>
-  </div>
-  <div class="col-lg-3 col-xs-3">
-    <a href="#"><img src="{% static "images/kisha_pizeria__-1.jpg"%}" alt="" style="width:25vw;"></a>
-  </div>
 
-  <div class="col-lg-3 col-xs-3">
-    <a href="#"><img src="{% static "images/trice4___-.jpg"%}" alt="" style="width:25vw;"></a>
-    <div  class="carousel-caption">
-      <h5 class="sec">Nelysa_Slideshow</h5>
+  <ul id="rig">
+    <li>
+        <a class="rig-cell" href="#">
+            <img class="rig-img" src="{% static "images/nelysa5__-.jpg"%}">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Lorem Ipsum Dolor</span>
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" href="#">
+            <img class="rig-img" src="{% static "images/trice_Frozen_-.jpg"%}">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Consectetur Adipiscing</span>
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" href="#">
+            <img class="rig-img" src="{% static "images/trice4___-.jpg"%}">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Vivamus ut Felis</span>
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" href="#">
+            <img class="rig-img" src="{% static "images/kisha_pizeria__-3.jpg"%}">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Curabitur tempus</span>
+        </a>
+    </li>
 
-    </div>
-  </div>
+</ul>
 
-  <div class="col-lg-3 col-xs-3">
-    <a href="{% url 'bw' %}"><img src="{% static "images/bwGema-1.jpg"%}" alt="" style="width:25vw;"></a>
-  </div>
-</div>
 
-</div>
+
 
 
 
@@ -220,4 +232,5 @@
   <!-- Latest compiled and minified JavaScript -->
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
   </body>
+    <script src='{% static "java/home.js" %}'></script>
 </html>

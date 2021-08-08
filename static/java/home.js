@@ -1,8 +1,22 @@
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
+function getRandomColor() {
+  var letters = '0123456789ABCDEF';
+  var color = '#';
+  for (var i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
   }
+  return color;
 }
+
+
+function setRandomColor() {
+  $("#colorpad").css("background-color", getRandomColor());
+}
+
+var legen = document.querySelector("#vinnyHeader")
+
+function ChangeHeaderColor(){
+  colorInput = getRandomColor()
+  legen.style.color = colorInput;
+}
+
+setInterval("ChangeHeaderColor()", 1000);
