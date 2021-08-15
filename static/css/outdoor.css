@@ -1,7 +1,7 @@
 #thumbnail-slider {
     margin:0 auto; /*center-aligned*/
-    width:100%;
-    max-width:900px;
+    width:90%;
+    max-width:1000px;
     padding:0;
     box-sizing:border-box;
     position:relative;
@@ -34,7 +34,7 @@
 #thumbnail-slider ul li {
     display:inline-block;
     /* margin-top:10px; */
-    margin-bottom:90px;
+    margin-bottom:0px;
     margin-left:-30px; margin-right:-30px; /* Spacing between thumbs*/
     -webkit-transform:scale(0.9);
     transform:scale(0.9); /*Note: The scale down will increase the spacing between slides. You can set negative margins as did above to roll back the spacing. */
@@ -63,8 +63,8 @@
 }
 
 #thumbnail-slider .thumb {
-    width:75%;
-    height: 75%;
+    width:70%;
+    height: 70%;
     background-size:contain;
     background-repeat:no-repeat;
     background-position:center center;
@@ -100,3 +100,14 @@
 
 #thumbnail-slider-pause-play {display:none;} /*.pause*/
 #thumbnail-slider-prev, #thumbnail-slider-next {display:none;}
+
+.jumbotron{
+  margin-top: 0px;
+  padding-bottom: 30%;
+}
+
+p{
+  margin-left: 30px;
+  padding-left: 30%;
+  padding-top: 2%;
+}
