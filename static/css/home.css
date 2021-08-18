@@ -40,6 +40,7 @@ h1{
 
 #midtext{
   text-align: center;
+  font-family: 'Otomanopee One', sans-serif;
 }
 
 .carousel ol{
@@ -47,9 +48,7 @@ h1{
 }
 
 .carousel-caption{
-
-
-  top: 20%;
+top: 20%;
 transform: translateY(-20%);
 transform: translateX(-30%);
 
@@ -63,7 +62,7 @@ h4{
 
 footer{
   font-size: 12px;
-  text-align: right;
+  text-align: center;
   margin-top: 30px;
 
 }
@@ -80,12 +79,13 @@ footer{
 
 
 #rig {
+
     max-width:90%;
     margin:0 auto; /*center aligned*/
     padding:0;
     font-size:0; /* Remember to change it back to normal font size if have captions */
     list-style:none;
-    background-color:#000000;
+    /* background-color:#000000; */
 }
 #rig li {
     display: inline-block;
@@ -181,4 +181,9 @@ footer{
     #rig li {
         width:50%;
     }
+}
+
+#belowSocial_Links:hover{
+  color: red;
+  font-size: 30px;
 }
