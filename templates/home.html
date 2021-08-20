@@ -14,6 +14,7 @@
 
     <script src="https://unpkg.com/scrollreveal@4"></script>
       <link rel="stylesheet" href='{% static "css/home.css" %}'/>
+      <link rel="stylesheet" href='{% static "css/popup.css" %}'/>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,7 +29,7 @@
   <body>
 
 <!-- creatiating a navigation bar -->
-<nav class="navbar navbar-default  navbar-fixed-top" style="opacity:1;">
+<nav class="navbar navbar-default  " style="opacity:1;">
 <div class="container">
   <div class="navbar-header">
 
@@ -196,34 +197,65 @@
 
   <ul id="rig">
     <li>
-        <a class="rig-cell" href="#">
-            <img class="rig-img" src="{% static "images/nelysa5__-.jpg"%}">
-            <span class="rig-overlay"></span>
-            <span class="rig-text">Lorem Ipsum Dolor</span>
-        </a>
-    </li>
-    <li>
-        <a class="rig-cell" href="#">
-            <img class="rig-img" src="{% static "images/trice_Frozen_-.jpg"%}">
-            <span class="rig-overlay"></span>
-            <span class="rig-text">Consectetur Adipiscing</span>
-        </a>
-    </li>
-  
+
+        <div class="rig-cell">
+          <img id="myImg" class="rig-img" src="{% static "images/nelysa5__-.jpg"%}">
+          <!-- <span class="rig-overlay"></span> -->
+          <span class="rig-text">Lorem Ipsum Dolor</span>
+            </div>
+
+          <!-- The Modal popup image -->
+          <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+          </div>
+            </li>
+
+
+
+
 
     <li>
-        <a class="rig-cell" href="#">
-            <img class="rig-img" src="{% static "images/trice4___-.jpg"%}">
-            <span class="rig-overlay"></span>
-            <span class="rig-text">Vivamus ut Felis</span>
-        </a>
+        <div class="rig-cell" href="#">
+            <img id="myImg2" class="rig-img" src="{% static "images/trice_Frozen_-.jpg"%}">
+            <!-- <span class="rig-overlay"></span> -->
+            <span class="rig-text">Consectetur Adipiscing</span>
+        </div>
+
+        <div id="myModal2" class="modal2">
+          <span class="close2">&times;</span>
+          <img class="modal-content2" id="img02">
+          <div id="caption2"></div>
+        </div>
     </li>
+
+
     <li>
-        <a class="rig-cell" href="#">
-            <img class="rig-img" src="{% static "images/kisha_pizeria__-3.jpg"%}">
-            <span class="rig-overlay"></span>
+        <div class="rig-cell" href="#">
+            <img id="myImg3" class="rig-img" src="{% static "images/trice4___-.jpg"%}">
+            <!-- <span class="rig-overlay"></span> -->
+            <span class="rig-text">Vivamus ut Felis</span>
+        </div>
+        <div id="myModal3" class="modal3">
+          <span class="close3">&times;</span>
+          <img class="modal-content3" id="img03">
+          <div id="caption3"></div>
+        </div>
+    </li>
+
+
+    <li>
+        <div class="rig-cell" href="#">
+            <img id="myImg4" class="rig-img" src="{% static "images/kisha_pizeria__-3.jpg"%}">
+            <!-- <span class="rig-overlay"></span> -->
             <span class="rig-text">Curabitur tempus</span>
-        </a>
+        </div>
+
+        <div id="myModal4" class="modal4">
+          <span class="close4">&times;</span>
+          <img class="modal-content4" id="img04">
+          <div id="caption4"></div>
+        </div>
     </li>
 
 </ul>
@@ -254,4 +286,5 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
   </body>
     <script src='{% static "java/home.js" %}'></script>
+    <script src='{% static "java/popup.js" %}'></script>
 </html>
