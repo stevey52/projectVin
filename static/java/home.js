@@ -20,3 +20,16 @@ function ChangeHeaderColor(){
 }
 
 setInterval("ChangeHeaderColor()", 1000);
+
+// adding an addEventListener on mouse hover to change textContent
+var changeMidtext = document.querySelector("#midtext")
+changeMidtext.addEventListener("mouseover",function(){
+  changeMidtext.textContent = "Meet with the science of Light Balanced from indoor,outdoor and Black&White images";
+  changeMidtext.style.color = "red";
+})
+
+// adding an addEventListener (mouseout)to reverse the change
+changeMidtext.addEventListener("mouseout", function(){
+  changeMidtext.textContent = "Indoor , outdoor to Black & white";
+  changeMidtext.style.color = "black";
+})

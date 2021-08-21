@@ -10,7 +10,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 #myImg:hover,
 #myImg2:hover,
 #myImg3:hover,
-#myImg3:hover {
+#myImg4:hover {
   opacity: 0.7;
 }
 
@@ -28,6 +28,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0,0.9); /* Fallback color */
   /* background-color: rgba(0,0,0,0.9); /* Black w/ opacity */ */
+
 }
 
 /* Modal Content (image) */
