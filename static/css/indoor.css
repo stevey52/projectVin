@@ -1,13 +1,32 @@
-#it{
-  position: relative;
-  text-align: center;
-}
 
 p{
   text-align: center;
+  padding-top: 90px;
 }
 
-.col-lg-4 img:hover{
-  width: 50vw;
+#himself{
+  padding: 0px;
+}
 
+h1{
+  opacity: 0.5;
+  text-decoration: underline;
+  text-decoration-color: yellow;
+}
+
+h2{
+font-family: "Roboto";
+font-weight: 700;
+line-height: 1.26;
+color: #002c42;
+}
+
+h3{
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  position: absolute;
+  font-family: "Roboto";
+  font-weight: 700;
+  line-height: 1.26;
+  color: #002c42;
 }
