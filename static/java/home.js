@@ -25,7 +25,7 @@ setInterval("ChangeHeaderColor()", 1000);
 var changeMidtext = document.querySelector("#midtext")
 changeMidtext.addEventListener("mouseover",function(){
   changeMidtext.textContent = "Meet with the science of Light Balanced from indoor,outdoor and Black&White images";
-  changeMidtext.style.color = "red";
+  changeMidtext.style.color = "#008C8C";
 })
 
 // adding an addEventListener (mouseout)to reverse the change
